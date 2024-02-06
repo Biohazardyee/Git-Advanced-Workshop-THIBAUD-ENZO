@@ -1,1 +1,100 @@
-my html 
+<!DOCTYPE html>
+<html>
+    <head>
+    	<link rel="shortcut icon" href="data/icones/presentation.ico">
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/presentation.css" />
+        <script src="algo/SmartSlider.js"></script>
+        <title>A Website</title>
+    </head>
+    
+    <body>
+        
+
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img class=slide id=slide  src="data/images/bing1.jpg">
+    <div class="text inactive" onclick = "background_text(1)"><span class="caption">Thibaud</span></br><span class="SUBcaption">likes airplanes</span></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img class=slide id=slide  src="data/images/bing2.jpg"$>
+    <div class="text inactive" onclick = "background_text(2)"><span class="caption">Enzo</span></br><span class="SUBcaption">likes speedrun</span></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img class="slide" src="data/images/bing3.jpg">
+    <div class="text inactive" onclick = "background_text(3)"><span class="caption">Benoît</span></br><span class="SUBcaption">likes too many things</span></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img class="slide" src="data/images/bing4.jpg">
+    <div class="text inactive" onclick = "background_text(4)"><span class="caption">This slideshow website</span></br><span class="SUBcaption">was very long to code</span></div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <div class = "buttons">
+    <a class= "prev" onclick="previousButton()">‹</a>
+    <a class= "next" onclick="nextButton()">›</a>
+  </div>
+</div>
+
+<br>
+
+<!-- The dots/circles -->
+<div class="dots" style="text-align:center">
+  <span class="dot active" onclick="goSlide(1)"></span>
+  <span class="dot" onclick="goSlide(2)"></span>
+  <span class="dot" onclick="goSlide(3)"></span>
+  <span class="dot" onclick="goSlide(4)"></span>
+</div>
+
+<div class = "topTitle closed">
+  <span class = "title">Advanced Git workshop</span> 
+</div>
+
+<div id = burger class = "burger" onclick="menu()">
+  <div class = "barres">
+    <span id = "bar1" class = "barre"></span>
+    <div style = "display : flex; justify-content : center">
+      <span id = "bar2" class = "barre"></span>
+    </div>
+    <span id = "bar3" class = "barre"></span>
+  </div>
+</div>
+
+
+<div id="mySidenav" class="sidenav closed">
+  <ul>
+    <li><a href="Enzo.html">Enzo's page</a></li>
+    <li><a href="Thibaud.html">Thibaud's Page</a></li>
+    <li><a href="#">Mine is that</a></li>
+    <li><a href="#">so no linked after</a></li>
+    <li><a href="trombinoscope.php">here a dead link</a></li>
+  </ul>
+</div>
+
+<div id="footer">
+    <p class="signature">
+        <hr id = "line" size="1" width="20%" align="left" color="#000040">
+        <i class="created_by">Created by :</i> 
+        <br>
+        <strong class="name">Benoît De Keyn</strong>
+        <br>
+        <a class="phone" href="tel:+33765894325" target="_blank">07 65 89 43 25</a>
+        <br>
+        <a class="mail" href="mailto:benoitdkn@gmail.com" target="_blank">benoitdkn@gmail.com</a>
+        <br>
+        <span class="adresse">France</span>
+    </p>
+</div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'LCALLIG';
+    src: url(../data/polices/LCALLIG.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'MAIAN';
+    src: url(../data/polices/MAIAN.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Ubuntu-Regular';
+    src: url(../data/polices/ubuntu/Ubuntu-Regular.woff) format('woff');
+}
+@font-face {
+    font-family: 'Ubuntu-Light';
+    src: url(../data/vpolices/ubuntu/Ubuntu-Light.woff) format('woff');
+}
+@font-face {
+    font-family: 'Ubuntu-Medium';
+    src: url(../data/polices/ubuntu/Ubuntu-Medium.woff) format('woff');
+}
+@font-face {
+    font-family: 'Ubuntu-Bold';
+    src: url(../data/polices/ubuntu/Ubuntu-Bold.woff) format('woff');
+}
+
+
+:root {
+    --marine-color: #151563;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #00000049;
+    background: url(../data/images/background.jpg);
+    background-size: cover all;
+    margin: 0;
+    color: var(--marine-color);
+    font-family: 'Ubuntu-Regular';
+    opacity: 1;
+}
+
+
+
+.txt_link {
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.txt_link:hover {
+    text-decoration: none;
+}
+
+
+
+.titre1 {
+    font-size: 50px;
+    font-family: 'Ubuntu-Regular';
+    text-align: center;
+}
+
+.titre2 {
+    text-align: center;
+    font-size: 30px;
+}
+#footer {
+    margin-left: 1%;
+    text-align: left;
+    color: var(--marine-color);
+    font-family: 'Ubuntu-Regular';
+    opacity: 1;
+    font-size: 10px;
+}
+
+br.foot{
+    font-size: 0px;
+}
+a.phone,
+a.mail {
+    color: var(--marine-color);
+    text-decoration: none;
+    font-size: 2em;
+}
+
+a.phone:hover,
+a.mail:hover {
+    color: var(--marine-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.phone,
+.mail,
+.adresse {
+    font-size: 2.5em;
+}
+
+.created_by {
+    font-size: 2em;
+}
+
+.name {
+    font-size: 3em;
+}

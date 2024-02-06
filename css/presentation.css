@@ -1,0 +1,268 @@
+
+@font-face {
+    font-family: 'Ubuntu-Light';
+    src: url(../data/polices/ubuntu/Ubuntu-Light.woff) format('woff');
+}
+@font-face {
+    font-family: 'Ubuntu-Regular';
+    src: url(../data/polices/ubuntu/Ubuntu-Regular.woff) format('woff');
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.slideshow-container {
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+}
+.menu-container {
+  cursor: pointer;
+  display: none;
+  position : absolute;
+  height: 100000%;
+  width : auto;
+}
+
+.topTitle{
+  z-index : 2;
+  position : absolute;
+  width : 100%;
+  height : auto;
+  background-color: #00000000;
+  color : white;
+  font-size: 2em; /*valeur égale à fontsize de burger*/
+  transition : background-color 0.4s ease;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.topTitle.opened {
+  background-color :rgba(0, 0, 0, 1);
+  position : fixed
+}
+
+.burger{
+  font-size: 2em; /*valeur égale à fontsize de title*/
+  position: fixed ;
+  padding: 0.7em; /*valeur égale à padding de title*/
+  right:0;
+  top: 0;
+  z-index : 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+
+.title{
+  transition : background-color 1s ease ;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding : 0.7em; /*valeur éale à padding de burger*/
+}
+
+
+
+.mySlides {
+  position: relative;
+  overflow: hidden;
+
+  
+
+}
+
+.prev, .next {
+  cursor: pointer;
+  width: auto;
+  margin-top: -3%;
+  padding: 0.2em 0.4em 0.3em 0.2em;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  transition: 0.6s ease;
+  border-radius: 0 0.5em 0.5em 0;
+  user-select: none;
+  background-color: rgba(0,0,0,0.3);
+}
+
+
+.next {
+  right : 0;
+  border-radius: 0.5em 0 0 0.5em;
+  padding: 0.2em 0.2em 0.3em 0.4em;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text.inactive:hover {
+  background-color :rgba(0, 0, 0, 0.8);
+}
+
+.text.active {
+  background-color :rgba(0, 0, 0, 0.8);
+}
+.text.inactive {
+  background: rgba(0, 0, 0, 0);
+}
+
+.text {
+  color: #f2f2f2;
+  background: rgba(0, 0, 0, 0);
+  padding: 20px;
+  border-radius: 30px;
+  font-family: 'Ubuntu-Regular';
+  font-size: 3em;
+  margin-left: 5%;
+  position: absolute;
+  bottom: 15%;
+  width: fit-content;
+  text-align: left;
+  line-height: 70%;  
+  transition : background-color 0.5s ease;
+
+}
+
+.SUBcaption {
+    font-size: 0.6em;
+    line-height: 20%;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  display : none;
+}
+
+.dot {
+  cursor: pointer;
+  height: 1em;
+  width: 1em;
+  margin: 0 0.5em;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.sidenav {
+  font-size: 2em; /*valeur égale à fontsize de title*/
+  height: 100%;
+  width: auto;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background: #e8e8e8;
+  padding-top: 5em; /*valeur provisoire révisée par javascript*/
+  
+}
+
+.sidenav a {
+  
+  padding: 0.5em 1.1em 0.5em 1em;
+  text-decoration: none;
+  color: #a7a7a7;
+  display: block;
+}
+
+.sidenav a:hover {
+  transition : color 0.5s ease;
+  transition : background-color 0.5s ease;
+  color: #1d1d1d;
+  background-color: #a7a7a7;
+}
+
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidenav.opened {
+  
+  right: -0.1em;
+  background: rgba(0, 0, 0, 1);
+}
+
+.sidenav.closed {
+  
+  background: rgba(0, 0, 0, 0);
+}
+
+.barres{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.barre {
+  transition : rotate 0.5s, width 0.3s;
+  display: block;
+  width: 1.2em;
+  height: 0.1em;
+  background-color: white;
+  margin: 0.35em ;
+  margin-top: 0;
+}
+
+#bar1{
+  margin-top: 0.35em;
+}
+
+
+
+
+
+#bar1.bugered{
+  transform-origin: center right;
+  rotate: 45deg;
+  
+}
+#bar2.bugered{
+  transform-origin: center center;
+  width : 1.2em;
+
+}
+#bar3.bugered{
+  transform-origin: center right;
+  rotate: -45deg;
+}
+
+
+#bar1.croix{
+  transform-origin: center right;
+  rotate: -45deg;
+}
+#bar2.croix{
+  transform-origin: center center;
+  width : 0em;
+}
+#bar3.croix{
+  transform-origin: center right;
+  rotate: 45deg;
+}
